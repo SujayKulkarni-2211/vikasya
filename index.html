@@ -643,8 +643,10 @@
                 });
             });
             
-            
-            
+            // Initially expand the first round card
+            if (roundCards.length > 0) {
+                roundCards[0].classList.remove("expanded");
+            }
         });
 
         // Problem cards hover effect

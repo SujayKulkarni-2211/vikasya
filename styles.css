@@ -807,7 +807,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0.5rem 1.5rem;
     max-height: fit-content;
     overflow: hidden;
-    transition: max-height 0.5s ease, padding 0.5s ease;
+    transition: max-height 0.8s ease, padding 0.8s ease-in-out;
     display: none;
 }
 

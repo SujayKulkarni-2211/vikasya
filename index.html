@@ -643,10 +643,8 @@
                 });
             });
             
-            // Initially expand the first round card
-            if (roundCards.length > 0) {
-                roundCards[0].classList.add("expanded");
-            }
+            
+            
         });
 
         // Problem cards hover effect
@@ -743,8 +741,8 @@
                 for (let i = 0; i < 8; i++) {
                     const ember = document.createElement("div");
                     ember.className = "divider-ember";
-                    ember.style.left = `${Math.random() * 1000}%`;
-                    ember.style.animationDelay = `${Math.random() * 2}s`;
+                    ember.style.left = `${Math.random() * 10}%`;
+                    ember.style.animationDelay = `${Math.random() * 3}s`;
                     ember.style.animationDuration = `${Math.random() * 2 + 2}s`;
                     divider.appendChild(ember);
                 }

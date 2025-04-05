@@ -812,7 +812,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .round-card.expanded .round-content {
     padding: 1.5rem;
-    max-height: 1000px; /* Increased for more content */
+    max-height: fit-content; 
 }
 
 .round-card:hover .round-header {

@@ -511,7 +511,7 @@
             
             // Generate matrix characters for the loader
             const matrixGrid = document.querySelector(".matrix-grid");
-            const chars = "01अ आ इ ई उ ऊ ऋ ऌ ए ऐ ओ औ अं अः क ख ग घ ङ च छ ज झ ट ठ ड ढ ण त थ द ध न प फ ब भ म α β γ δ ∑ ∆ π θ λ μ ∞ ⊕ ⊗ ⊥ ∇ ≠ ≈ ∂ ∫ ∬ ⨁ ⨂ ⨄ ⨅ ⨆ ⨇ ⨈ ⨉ ⨊ ⨋ ⨌ ⨍ ⨎ ⨏ ⨐ ⨑ ⨒ ⨓ ⨔ ⨕ ⨖ ⨗ ⨘ ⨙ ⨚ ⨛ 🧠 🤖 ⌬ 🌀";
+            const chars = "01अ आ इ  λ μ ∞ ⊕ ⊗ ⊥ ∇ ई उ ऊ ऋ ऌ ए ऐ ओ 🧠 🤖 🌀 औ अं अः क ख ग घ ∇ ≠ ≈ ∂ ∫ ∬  ङ च छ ज झ ट 🧠 🤖 🌀 ठ ड ढ ण त थ द ध न प फ ब भ म α β γ δ ∑ ∆ 🧠 🤖 🌀 π θ λ μ ∞ ⊕ ⊗ ⊥ ∇ ≠ ≈ ∂ ∫ ∬ ⨁ ⨂ ⨄ ⨅ ⨆ ⨇ ⨈ ⨉ ⨊ ⨋ ⨌ ⨍ ⨎ ⨏ ⨐ ⨑ ⨒ ⨓ ⨔ ⨕ ⨖ ⨗ ⨘ ⨙ ⨚ ⨛ 🧠 🤖 🌀";
             const gridSize = 20;
             
             for (let i = 0; i < gridSize * gridSize; i++) {
@@ -535,8 +535,8 @@
                 }, 500);
             }, 1500);
             
-            // Set a minimum display time for the loader (3 seconds)
-            const minDisplayTime = 3000; // 3 seconds
+            // Set a minimum display time for the loader (4 seconds)
+            const minDisplayTime = 4000; // 3 seconds
             const startTime = Date.now();
             
             // Hide loader when page is fully loaded or after minimum display time, whichever is longer
@@ -569,7 +569,7 @@
         // Countdown timer functionality
         document.addEventListener("DOMContentLoaded", function() {
             // Set the date we're counting down to (April 10, 2025)
-            const countDownDate = new Date("Apr 10, 2025 00:00:00").getTime();
+            const countDownDate = new Date("Apr 12, 2025 00:00:00").getTime();
             
             // Update the countdown every 1 second
             const x = setInterval(function() {
@@ -598,7 +598,7 @@
                     document.getElementById("hours").textContent = "00";
                     document.getElementById("minutes").textContent = "00";
                     document.getElementById("seconds").textContent = "00";
-                    document.querySelector(".countdown-container p").textContent = "Hackathon has started!";
+                    document.querySelector(".countdown-container p").textContent = "Hackathon has started! Round 1 is ON till April 20th April 2025!";
                 }
             }, 1000);
         });
@@ -743,8 +743,8 @@
                 for (let i = 0; i < 8; i++) {
                     const ember = document.createElement("div");
                     ember.className = "divider-ember";
-                    ember.style.left = `${Math.random() * 100}%`;
-                    ember.style.animationDelay = `${Math.random() * 3}s`;
+                    ember.style.left = `${Math.random() * 1000}%`;
+                    ember.style.animationDelay = `${Math.random() * 2}s`;
                     ember.style.animationDuration = `${Math.random() * 2 + 2}s`;
                     divider.appendChild(ember);
                 }

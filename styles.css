@@ -641,7 +641,7 @@ h1, h2, h3, h4, h5, h6 {
 /* About Section */
 .about-section {
     margin-top: 2rem;
-    padding: 1rem;
+    padding: 0.6rem;
     background-color: var(--dark-bg);
     position: relative;
     
@@ -805,7 +805,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .round-content {
     padding: 0 1.5rem;
-    max-height: 0;
+    max-height: fit-content;
     overflow: hidden;
     transition: max-height 0.5s ease, padding 0.5s ease;
 }
